@@ -13,7 +13,7 @@ class Animal:
         self.__continent = continent
 
     def __str__(self) -> str:
-        return f"My name: {self.__name} and I live in {self.__continent.value}, also I am a {self.__class__.__name__}. "
+        return f"My name: {self.__name} and I live mainly in {self.__continent.value}, also I am a {self.__class__.__name__}. "
 
     @abstractmethod
     def do_voice(self) -> None:
