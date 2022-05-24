@@ -1,19 +1,19 @@
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 
 from labs.models.continent import Continent
 from labs.models.size import Size
 
 
-class Animal:
+class Animal(ABC):
 
     def __init__(self, name: str, size: Size, is_predator: bool, continent: Continent) -> None:
-        self.__name = name
-        self.__size = size
-        self.__is_predator = is_predator
-        self.__continent = continent
+        self._name = name
+        self._size = size
+        self._is_predator = is_predator
+        self._continent = continent
 
     def __str__(self) -> str:
-        return f"My name: {self.__name} and I live mainly in {self.__continent.value}, also I am a {self.__class__.__name__}. "
+        return f"My name: {self._name} and I live mainly in {self._continent.value}, also I am a {self.__class__.__name__}. "
 
     @abstractmethod
     def do_voice(self) -> None:
