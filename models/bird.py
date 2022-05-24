@@ -13,8 +13,8 @@ class Bird(Animal):
         self.__can_fly = can_fly
         self.__is_domestic = is_domestic
 
-    def __str__(self) -> str:
-        return super().__str__() + f"So, as you know, I lay eggs."
+    def __repr__(self) -> str:
+        return super().__repr__() + f"So, as you know, I lay eggs."
 
     # overriding abstract method
     def do_voice(self) -> None:

@@ -11,8 +11,8 @@ class Fish(Animal):
         self.__lives_in_fresh_water = lives_in_fresh_water
         self.__is_poisonous = is_poisonous
 
-    def __str__(self) -> str:
-        return super().__str__() + f"My meat is really tasty."
+    def __repr__(self) -> str:
+        return super().__repr__() + f"My meat is really tasty."
 
     # overriding abstract method
     def do_voice(self) -> None:
