@@ -5,6 +5,9 @@ from labs.models.size import Size
 
 
 class Animal(ABC):
+    """
+    Super class
+    """
 
     def __init__(self, name: str, size: Size, is_predator: bool, continent: Continent) -> None:
         self._name = name
@@ -17,4 +20,7 @@ class Animal(ABC):
 
     @abstractmethod
     def do_voice(self) -> None:
-        pass
+        """
+        Animal does some voice
+        :return: None
+        """
