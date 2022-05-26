@@ -11,8 +11,8 @@ class Reptile(Animal):
         self.__is_poisonous = is_poisonous
         self.__changes_skin = changes_skin
 
-    def __repr__(self) -> str:
-        return super().__repr__() + f"I spend some time underwater."
+    def __str__(self) -> str:
+        return super().__str__() + f"I spend some time underwater."
 
     # overriding abstract method
     def do_voice(self) -> None:

@@ -13,8 +13,8 @@ class Mammal(Animal):
         self.__is_living_in_a_pride = is_living_in_a_pride
         self.__is_domestic = is_domestic
 
-    def __repr__(self) -> str:
-        return super().__repr__() + f"That`s why I feed my kids with milk."
+    def __str__(self) -> str:
+        return super().__str__() + f"That`s why I feed my kids with milk."
 
     # overriding abstract method
     def do_voice(self) -> None:

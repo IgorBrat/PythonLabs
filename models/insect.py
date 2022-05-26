@@ -11,8 +11,8 @@ class Insect(Animal):
         self.__count_of_legs = count_of_legs
         self.__has_wings = has_wings
 
-    def __repr__(self) -> str:
-        return super().__repr__() + f"I bother people`s lives by buzzing."
+    def __str__(self) -> str:
+        return super().__str__() + f"I bother people`s lives by buzzing."
 
     # overriding abstract method
     def do_voice(self) -> None:

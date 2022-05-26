@@ -15,7 +15,7 @@ class Animal(ABC):
         self._is_predator = is_predator
         self._continent = continent
 
-    def __repr__(self) -> str:
+    def __str__(self) -> str:
         return f"My name: {self._name} and I live mainly in {self._continent.value}, also I am a {self.__class__.__name__}. "
 
     @abstractmethod
