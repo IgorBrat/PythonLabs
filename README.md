@@ -1,3 +1,5 @@
+# Python labs
+
 # First lab on python
 
 Make base class Animal and his subclasses: (Mammal, Bird, Reptile, Fish, Insect)
